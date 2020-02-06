@@ -1,0 +1,187 @@
+/* Import FF Hekaya Arabic font */
+@font-face {
+    font-family: "ff_hekayalight";
+    src: url("/fonts/ffhekaya-light-webfont.woff") format("woff"),
+        url("/fonts/ffhekaya-light-webfont.woff2") format("woff2"),
+        url("/fonts/FFHekaya-Light.otf") format("opentype"),
+        url("/fonts/ffhekaya-light-webfont.ttf") format("truetype"),
+        url("/fonts/ffhekaya-light-webfont.svg") format("svg");
+}
+
+/* GENERAL */
+
+body {
+    font-family: 'FF Hekaya', 'Tajawal', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2.main-title {
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 4rem 1rem;
+    color: #07BEB8;
+}
+
+.arrow-down {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    transform: translateY(-100px);
+    right: 40%;
+    cursor: pointer;
+}
+
+/* SECTION ( 1 ) */
+
+/* .section-1 {
+    background-color: #00E6AF;
+} */
+
+/* SVG */
+
+.section-1 svg {
+    width: 100%;
+    height: 100%;
+}
+
+.section-1 path {
+    transform: rotate(-90deg);
+    transform-origin: 50% 100%;
+}
+
+.section-1 .wave-1,
+.section-1 .wave-2,
+.section-1 .tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.section-1 .wave-1,
+.section-1 .wave-2 {
+    left: 10%;
+    transform: scaleX(1.5);
+}
+
+/* Tree */
+
+.section-1 .tree {
+    position: absolute;
+    top: -25vh;
+    transform: scale(0.8);
+}
+
+polygon {
+    stroke-width: 1;
+  }
+  
+#cloud1,
+#cloud2 {
+    left:40%;
+    top: -5%;
+    position: absolute;
+}
+
+.green-lighter {
+  background: #a5df66;
+  fill: #a5df66;
+  stroke: #a5df66;
+}
+.green-light {
+  background: #79b544;
+  fill: #79b544;
+  stroke: #79b544;
+}
+.green-norm {
+  background: #619b37;
+  fill: #619b37;
+  stroke: #619b37;
+}
+.green-dark {
+  background: #54892f;
+  fill: #54892f;
+  stroke: #54892f;
+}
+.green-darker {
+  background: #3c6720;
+  fill: #3c6720;
+  stroke: #3c6720;
+}
+.brown-light {
+  background: #d5bc79;
+  fill: #d5bc79;
+}
+.brown-dark {
+  background: #996d2e;
+  fill: #996d2e;
+}
+
+/* Content */
+
+.section-1 .left,
+.section-1 .right {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.section-1 .right {
+    position: relative;
+    top: -30px;
+    left: 60px;
+}
+
+.section-1 .right .logo {
+    width: 30%;
+}
+
+.section-1 .right h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 3rem 0;
+    color: #25283D;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.section-1 a {
+    display: inline-block;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    width: 9rem;
+    font-family: 'Tajawal', sans-serif;
+    background-color: #8F3985;
+    color: #fff;
+}
+
+.section-1 a:hover {
+    background-color: #602859;
+    color: #fff;
+}
+
+.section-1 img {
+    width: 100%;
+}
+
+/* SECTION ( 2 ) */
+.section-2 {
+    background-image: url("/img/section2_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-2 .container {
+    padding-right: 2rem;;
+}
+
